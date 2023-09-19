@@ -90,7 +90,7 @@ if option == "I'm not sure":
         ["Within one state", "Multiple states", "Internationally", "Online only"]
     )
     
-        if st.button("Get Guidance"):
+    if st.button("Get Guidance"):
             user_input = f"Protection of assets: {q1}, Owners: {q2}, Profit handling: {q3}, Business duration: {q4}, Management: {q5}, Investment: {q6}, Operation location: {q7}"
             advice = get_business_advice(user_input)
             st.write(advice)
