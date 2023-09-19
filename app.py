@@ -3,7 +3,7 @@ import requests
 import openai
 
 # Constants
-DATA_URL = "https://path_to_corporate_data_file.txt"  # Replace with the actual URL
+DATA_URL = "https://path_to_corporate_data_file.txt"  # URL
 
 def download_corporate_data_file():
     response = requests.get(DATA_URL)
