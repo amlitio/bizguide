@@ -38,7 +38,7 @@ def main():
         else:
             st.warning(f"The name {business_name} is already taken.")
     
-# Business Structure Guidance with Questionnaire
+    # Business Structure Guidance with Questionnaire
 st.subheader("Business Structure Guidance")
 option = st.selectbox(
     "Select your preference if you know:",
@@ -89,12 +89,12 @@ if option == "I'm not sure":
         ["Within one state", "Multiple states", "Internationally", "Online only"]
     )
     
-    # Once all questions are answered, prompt the AI for advice
-    if st.button("Get Guidance"):
-        user_input = f"Protection of assets: {q1}, Owners: {q2}, Profit handling: {q3}, Business duration: {q4}, Management: {q5}, Investment: {q6}, Operation location: {q7}"
-        # # call to GPT-3.5 with the combined user_input.
-        advice = get_business_advice(user_input)
-        st.write(advice)
+        if st.button("Get Guidance"):
+            user_input = f"Protection of assets: {q1}, Owners: {q2}, Profit handling: {q3}, Business duration: {q4}, Management: {q5}, Investment: {q6}, Operation location: {q7}"
+            advice = get_business_advice(user_input)
+            st.write(advice)
 
 if __name__ == "__main__":
     main()
+
+    
